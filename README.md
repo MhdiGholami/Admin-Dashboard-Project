@@ -9,9 +9,9 @@
 ![temp conversion](https://github.com/user-attachments/assets/a7ffd9e3-1a28-455f-a167-c4d0adf273fe)
 
 
-- [Demo Project]() ✅
+- [Demo Project](https://mhdigholami.github.io/Admin-Dashboard-Project/) ✅
 
-- [Online Pharmacy Plus Documentation]() ✅
+- [Admin-Dashboard Documentation](https://gift.nodisk.ir/s/RseoJKdLTQ86Hrd) ✅
 
 - Developed by Mahdi Gholami
 
