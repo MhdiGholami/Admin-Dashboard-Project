@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کاربران | پنل ادمین</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-surface-50 text-slate-800 transition-colors duration-500 dark:bg-surface-950 dark:text-slate-200" data-page="users" data-search="جستجوی کاربر">
+
+<main id="page-main" class="flex-1 p-4 sm:p-6 lg:p-8">
+  <div class="mb-8 flex flex-wrap items-end justify-between gap-4 opacity-0-start observe-in">
+    <div>
+      <h2 class="text-2xl font-bold sm:text-3xl">کاربران</h2>
+      <p class="mt-1 text-slate-500 dark:text-slate-400">۱٬۲۴۳ نفر</p>
+    </div>
+    <button type="button" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-l from-primary-500 to-violet-600 px-4 py-2.5 text-sm font-medium text-white shadow-lg shadow-primary-500/30 transition hover:brightness-110">
+      <span data-icon="plus"></span>
+      کاربر جدید
+    </button>
+  </div>
+
+  <div class="mb-6 grid gap-4 sm:grid-cols-3">
+    <div class="stat-card opacity-0-start observe-in stagger-1">
+      <p class="text-sm text-slate-500">فعال</p>
+      <p class="mt-1 text-2xl font-bold" data-count="982"></p>
+    </div>
+    <div class="stat-card opacity-0-start observe-in stagger-2">
+      <p class="text-sm text-slate-500">جدید این ماه</p>
+      <p class="mt-1 text-2xl font-bold" data-count="86"></p>
+    </div>
+    <div class="stat-card opacity-0-start observe-in stagger-3">
+      <p class="text-sm text-slate-500">مسدود</p>
+      <p class="mt-1 text-2xl font-bold" data-count="12"></p>
+    </div>
+  </div>
+
+  <section class="chart-card opacity-0-start observe-in mb-6">
+    <div class="mb-4 flex flex-wrap items-center gap-3">
+      <button type="button" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2 text-sm transition hover:border-primary-300 dark:border-slate-700">
+        <span data-icon="filter"></span>
+        فیلتر
+      </button>
+      <button type="button" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2 text-sm transition hover:border-primary-300 dark:border-slate-700">
+        <span data-icon="download"></span>
+        خروجی
+      </button>
+      <div class="mr-auto flex gap-2">
+        <button type="button" class="rounded-lg bg-primary-500 px-3 py-1.5 text-xs font-medium text-white">همه</button>
+        <button type="button" class="rounded-lg px-3 py-1.5 text-xs text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700">مدیر</button>
+        <button type="button" class="rounded-lg px-3 py-1.5 text-xs text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700">مشتری</button>
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full min-w-[720px] text-right text-sm">
+        <thead>
+          <tr class="border-b border-slate-100 text-slate-500 dark:border-slate-700">
+            <th class="pb-3 font-semibold">کاربر</th>
+            <th class="pb-3 font-semibold">ایمیل</th>
+            <th class="pb-3 font-semibold">نقش</th>
+            <th class="pb-3 font-semibold">وضعیت</th>
+            <th class="pb-3 font-semibold">عملیات</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 dark:divide-slate-700/80">
+          <tr class="transition hover:bg-slate-50/80 dark:hover:bg-slate-800/30">
+            <td class="py-4"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-100 font-bold text-primary-600 dark:bg-primary-900/40">م</span><div><p class="font-medium">محمد رضایی</p><p class="text-xs text-slate-500">عضو از ۱۴۰۳</p></div></div></td>
+            <td class="py-4 text-slate-600 dark:text-slate-300">m.rezaei@ariyashop.ir</td>
+            <td class="py-4"><span class="rounded-full bg-violet-100 px-2.5 py-1 text-xs font-medium text-violet-700 dark:bg-violet-900/40 dark:text-violet-300">مدیر</span></td>
+            <td class="py-4"><span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-medium text-emerald-700 dark:bg-emerald-900/40"><span data-icon="check"></span>فعال</span></td>
+            <td class="py-4"><div class="flex gap-2"><button type="button" class="rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700" aria-label="ویرایش"><span data-icon="edit"></span></button><button type="button" class="rounded-lg p-2 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20" aria-label="حذف"><span data-icon="trash"></span></button></div></td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/80 dark:hover:bg-slate-800/30">
+            <td class="py-4"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 font-bold text-cyan-600 dark:bg-cyan-900/40">س</span><div><p class="font-medium">سارا احمدی</p><p class="text-xs text-slate-500">عضو از ۱۴۰۴</p></div></div></td>
+            <td class="py-4">s.ahmadi@ariyashop.ir</td>
+            <td class="py-4"><span class="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium dark:bg-slate-700">مشتری</span></td>
+            <td class="py-4"><span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-medium text-emerald-700 dark:bg-emerald-900/40"><span data-icon="check"></span>فعال</span></td>
+            <td class="py-4"><div class="flex gap-2"><button type="button" class="rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700"><span data-icon="edit"></span></button><button type="button" class="rounded-lg p-2 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20"><span data-icon="trash"></span></button></div></td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/80 dark:hover:bg-slate-800/30">
+            <td class="py-4"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 font-bold text-amber-600 dark:bg-amber-900/40">ع</span><div><p class="font-medium">علی کریمی</p><p class="text-xs text-slate-500">عضو از ۱۴۰۲</p></div></div></td>
+            <td class="py-4">a.karimi@ariyashop.ir</td>
+            <td class="py-4"><span class="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium dark:bg-slate-700">مشتری</span></td>
+            <td class="py-4"><span class="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700 dark:bg-amber-900/40">در انتظار</span></td>
+            <td class="py-4"><div class="flex gap-2"><button type="button" class="rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700"><span data-icon="edit"></span></button><button type="button" class="rounded-lg p-2 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20"><span data-icon="trash"></span></button></div></td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/80 dark:hover:bg-slate-800/30">
+            <td class="py-4"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-100 font-bold text-rose-600 dark:bg-rose-900/40">ن</span><div><p class="font-medium">نازنین موسوی</p><p class="text-xs text-slate-500">عضو از ۱۴۰۴</p></div></div></td>
+            <td class="py-4">n.mousavi@ariyashop.ir</td>
+            <td class="py-4"><span class="rounded-full bg-violet-100 px-2.5 py-1 text-xs font-medium text-violet-700 dark:bg-violet-900/40">ویرایشگر</span></td>
+            <td class="py-4"><span class="rounded-full bg-rose-100 px-2.5 py-1 text-xs font-medium text-rose-700 dark:bg-rose-900/40">مسدود</span></td>
+            <td class="py-4"><div class="flex gap-2"><button type="button" class="rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-700"><span data-icon="edit"></span></button><button type="button" class="rounded-lg p-2 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-900/20"><span data-icon="trash"></span></button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="js/icons.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/dropdowns.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

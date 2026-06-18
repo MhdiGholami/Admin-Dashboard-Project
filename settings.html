@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تنظیمات | پنل ادمین</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-surface-50 text-slate-800 transition-colors duration-500 dark:bg-surface-950 dark:text-slate-200" data-page="settings" data-search="جستجو">
+
+<main id="page-main" class="flex-1 p-4 sm:p-6 lg:p-8">
+  <div class="mb-8 opacity-0-start observe-in">
+    <h2 class="text-2xl font-bold sm:text-3xl">تنظیمات</h2>
+  </div>
+
+  <div class="grid gap-6 lg:grid-cols-3">
+    <aside class="space-y-2 lg:col-span-1">
+      <button type="button" class="nav-link active w-full"><span data-icon="users"></span> پروفایل</button>
+      <button type="button" class="nav-link w-full"><span data-icon="shield"></span> امنیت</button>
+      <button type="button" class="nav-link w-full"><span data-icon="bell"></span> اعلان‌ها</button>
+      <button type="button" class="nav-link w-full"><span data-icon="palette"></span> ظاهر</button>
+    </aside>
+
+    <div class="space-y-6 lg:col-span-2">
+      <section class="chart-card opacity-0-start observe-in">
+        <h3 class="mb-4 flex items-center gap-2 text-lg font-bold"><span data-icon="users"></span> اطلاعات پروفایل</h3>
+        <form class="space-y-4">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="mb-1.5 block text-sm font-medium text-slate-600 dark:text-slate-400">نام</label>
+              <input type="text" value="حسن" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20" />
+            </div>
+            <div>
+              <label class="mb-1.5 block text-sm font-medium text-slate-600 dark:text-slate-400">نام خانوادگی</label>
+              <input type="text" value="خسروجردی" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20" />
+            </div>
+          </div>
+          <div>
+            <label class="mb-1.5 block text-sm font-medium text-slate-600 dark:text-slate-400">ایمیل</label>
+            <div class="relative">
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" data-icon="mail"></span>
+              <input type="email" value="h.khosrojerdi@ariyashop.ir" class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pr-11 pl-4 text-sm focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20" />
+            </div>
+          </div>
+          <button type="button" class="rounded-xl bg-primary-500 px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-primary-500/30 transition hover:brightness-110">ذخیره تغییرات</button>
+        </form>
+      </section>
+
+      <section class="chart-card opacity-0-start observe-in">
+        <h3 class="mb-4 flex items-center gap-2 text-lg font-bold"><span data-icon="bell"></span> اعلان‌ها</h3>
+        <ul class="space-y-4">
+          <li class="flex items-center justify-between gap-4">
+            <div><p class="font-medium">ایمیل سفارش جدید</p><p class="text-xs text-slate-500">با هر سفارش جدید</p></div>
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" checked class="peer sr-only" />
+              <span class="h-6 w-11 rounded-full bg-slate-200 transition peer-checked:bg-primary-500 dark:bg-slate-600"></span>
+              <span class="absolute right-0.5 top-0.5 h-5 w-5 rounded-full bg-white shadow transition peer-checked:-translate-x-5 dark:bg-slate-300"></span>
+            </label>
+          </li>
+          <li class="flex items-center justify-between gap-4">
+            <div><p class="font-medium">گزارش هفتگی</p><p class="text-xs text-slate-500">هر شنبه صبح</p></div>
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" class="peer sr-only" />
+              <span class="h-6 w-11 rounded-full bg-slate-200 transition peer-checked:bg-primary-500 dark:bg-slate-600"></span>
+              <span class="absolute right-0.5 top-0.5 h-5 w-5 rounded-full bg-white shadow transition peer-checked:-translate-x-5 dark:bg-slate-300"></span>
+            </label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="chart-card opacity-0-start observe-in">
+        <h3 class="mb-4 flex items-center gap-2 text-lg font-bold"><span data-icon="palette"></span> ظاهر</h3>
+        <button type="button" data-theme-toggle class="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2 text-sm transition hover:border-primary-300 dark:border-slate-700">
+          <span class="dark:hidden" data-icon="moon"></span>
+          <span class="hidden dark:inline" data-icon="sun"></span>
+          تغییر تم
+        </button>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="js/icons.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/dropdowns.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

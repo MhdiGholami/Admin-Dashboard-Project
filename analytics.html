@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>گزارش‌ها | پنل ادمین</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-surface-50 text-slate-800 transition-colors duration-500 dark:bg-surface-950 dark:text-slate-200" data-page="analytics" data-search="جستجو">
+
+<main id="page-main" class="flex-1 p-4 sm:p-6 lg:p-8">
+  <div class="mb-8 flex flex-wrap items-end justify-between gap-4 opacity-0-start observe-in">
+    <div>
+      <h2 class="text-2xl font-bold sm:text-3xl">گزارش‌ها و تحلیل</h2>
+      <p class="mt-1 text-slate-500">اردیبهشت ۱۴۰۴</p>
+    </div>
+    <button type="button" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-2.5 text-sm transition hover:border-primary-300 dark:border-slate-700">
+      <span data-icon="download"></span>
+      خروجی Excel
+    </button>
+  </div>
+
+  <div class="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="stat-card opacity-0-start observe-in"><p class="text-sm text-slate-500">نرخ تبدیل</p><p class="mt-1 text-2xl font-bold" data-count="4" data-suffix="٪"></p></div>
+    <div class="stat-card opacity-0-start observe-in"><p class="text-sm text-slate-500">میانگین سبد</p><p class="mt-1 text-2xl font-bold" data-count="2850" data-suffix=" ه"></p></div>
+    <div class="stat-card opacity-0-start observe-in"><p class="text-sm text-slate-500">بازگشت</p><p class="mt-1 text-2xl font-bold" data-count="62" data-suffix="٪"></p></div>
+    <div class="stat-card opacity-0-start observe-in"><p class="text-sm text-slate-500">فروش امروز</p><p class="mt-1 text-2xl font-bold" data-count="48" data-suffix=" م"></p></div>
+  </div>
+
+  <div class="grid gap-6 lg:grid-cols-2">
+    <section class="chart-card opacity-0-start observe-in">
+      <h3 class="mb-1 text-lg font-bold">بازدیدکنندگان ماهانه</h3>
+      <p class="mb-4 text-sm text-slate-500">۴ هفته اخیر</p>
+      <div class="h-56 sm:h-64"><canvas id="visitorsChart"></canvas></div>
+    </section>
+    <section class="chart-card opacity-0-start observe-in">
+      <h3 class="mb-1 text-lg font-bold">نرخ تبدیل دستگاه</h3>
+      <p class="mb-4 text-sm text-slate-500">مقایسه پلتفرم‌ها</p>
+      <div class="h-56 sm:h-64"><canvas id="conversionChart"></canvas></div>
+    </section>
+  </div>
+
+  <section class="chart-card mt-6 opacity-0-start observe-in">
+    <h3 class="mb-4 text-lg font-bold">خلاصه عملکرد</h3>
+    <div class="space-y-4">
+      <div>
+        <div class="mb-1 flex justify-between text-sm"><span>فروش آنلاین</span><span class="font-medium">۷۸٪</span></div>
+        <div class="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700"><div class="h-full w-[78%] rounded-full bg-gradient-to-l from-primary-500 to-violet-500 transition-all duration-1000"></div></div>
+      </div>
+      <div>
+        <div class="mb-1 flex justify-between text-sm"><span>بازاریابی</span><span class="font-medium">۵۴٪</span></div>
+        <div class="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700"><div class="h-full w-[54%] rounded-full bg-gradient-to-l from-cyan-500 to-primary-500 transition-all duration-1000"></div></div>
+      </div>
+      <div>
+        <div class="mb-1 flex justify-between text-sm"><span>پشتیبانی</span><span class="font-medium">۹۱٪</span></div>
+        <div class="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700"><div class="h-full w-[91%] rounded-full bg-gradient-to-l from-emerald-500 to-cyan-500 transition-all duration-1000"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/chart.min.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/dropdowns.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages-analytics.js"></script>
+</body>
+</html>
